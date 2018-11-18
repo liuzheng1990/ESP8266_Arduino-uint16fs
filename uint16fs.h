@@ -24,7 +24,7 @@
 
 
 
-extern size_t read_uint16(File *f, uint16_t *buff, size_t len);
-extern size_t write_uint16(File *f, uint16_t *buff, size_t len);
+extern size_t read_uint16(Stream *f, uint16_t *buff, size_t len);
+extern size_t write_uint16(Stream *f, const uint16_t *buff, size_t len);
 
 #endif

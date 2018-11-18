@@ -1,5 +1,6 @@
 #include "uint16fs.h"
 #include <FS.h>
+#include <Stream.h>
 
 // Functions reading and writing unsigned short integers
 // from/to ESP8266's filesystem.
@@ -21,20 +22,20 @@
 
 
 
-size_t read_uint16(File *f, uint16_t *buff, size_t len)
+size_t read_uint16(Stream *f, uint16_t *buff, size_t len)
 {
 	// what if we got odd number of bytes in the end of a file?
 	if (len == 0)
 		return 0;
 
-	int read_bytes = f->read((uint8_t *)buff, 2*len);
+	int read_bytes = f->readBytes((uint8_t *)buff, 2*len);
 	if (read_bytes < 0 || read_bytes & 1) // odd number of bytes. Let's return -1 for now.
 		return 0;
 	return (size_t)(read_bytes/2);
 
 }
 
-size_t write_uint16(File *f, uint16_t *buff, size_t len)
+size_t write_uint16(Stream *f, const uint16_t *buff, size_t len)
 {
 	if (len == 0)
 		return 0;
