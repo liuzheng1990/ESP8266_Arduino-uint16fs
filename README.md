@@ -81,7 +81,7 @@ size_t data_len_received = read_uint16(&f, buff, 20); // Let's say we want to re
 
 ## License
 
-This repo is under the free and easy MIT License. For more details, please click the "MIT" icon to view the license file.
+This repo is under the free and easy MIT License. For more details, please click the "MIT" icon on the main page of this repo to view the license file.
 
 ## Contributors
 
