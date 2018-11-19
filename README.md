@@ -79,6 +79,10 @@ size_t data_len_received = read_uint16(&f, buff, 20); // Let's say we want to re
 
 4. **To write data to a file**, combine Steps 2 and 3. It's left as an exercise.
 
+## License
+
+This repo is under the free and easy MIT License. For more details, please click the "MIT" icon to view the license file.
+
 ## Contributors
 
 Original Author: Thales, Liu Zheng, Nov. 18th, 2018
@@ -89,3 +93,5 @@ Please feel free to give me any feedback or suggestion. Everyone is free to down
 welcome to raise a pull request if you have any improvement or extension to the library.
 
 Happy coding!
+
+Copyright (c) 2018 Thales, Liu Zheng
