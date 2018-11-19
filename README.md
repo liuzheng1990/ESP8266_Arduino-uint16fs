@@ -1,4 +1,6 @@
-# A trivially thin wrapper for reading/writing integers at ease (and a playground for Arduino/ESP8266 beginners)
+# A trivially thin wrapper for reading/writing integers at ease 
+
+**and a playground for Arduino/ESP8266 beginners**
 
 Welcome to use "uint16fs", a thin wrapper for reading/writing integers. The built-in read/write methods enable the users
 to read and write byte arrays. Since everything is made of bytes, these generic functions, in principle, can handle all
